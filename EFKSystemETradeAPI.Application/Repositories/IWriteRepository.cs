@@ -13,5 +13,6 @@ namespace EFKSystemETradeAPI.Application.Repositories
         bool Remove(T entity);
         Task<bool> RemoveAsync(string id);
         bool Update(T entity);
+        Task<int> SaveAsync();
     }
 }

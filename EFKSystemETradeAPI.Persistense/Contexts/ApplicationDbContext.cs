@@ -1,5 +1,7 @@
 ﻿using EFKSystemETradeAPI.Domain.Entities;
 using EFKSystemETradeAPI.Domain.Entities.Common;
+using EFKSystemETradeAPI.Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace EFKSystemETradeAPI.Persistence.Contexts
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<AppUser,AppRole,string>
     {
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
@@ -31,6 +33,7 @@ namespace EFKSystemETradeAPI.Persistence.Contexts
         public DbSet<Size> Sizes { get; set; }
         public DbSet<Status> Statuses { get; set; }
         public DbSet<SubCategory> SubCategories { get; set; }
+        public DbSet<OrderAddress> OrderAddresses { get; set; }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {

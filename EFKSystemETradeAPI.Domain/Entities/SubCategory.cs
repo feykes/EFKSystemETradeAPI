@@ -10,6 +10,6 @@ namespace EFKSystemETradeAPI.Domain.Entities
     public class SubCategory : BaseEntity
     {
         public string SubCategoryName { get; set; }
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
     }
 }

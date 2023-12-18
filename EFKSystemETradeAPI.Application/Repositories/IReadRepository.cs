@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EFKSystemETradeAPI.Application.Repositories
 {
-    public interface IReadRespository<T> : IRepository<T> where T : BaseEntity
+    public interface IReadRepository<T> : IRepository<T> where T : BaseEntity
     {
         IQueryable<T> GetAll(bool tracking = true);
         Task<T> GetByIdAsync(string id, bool tracking = true);

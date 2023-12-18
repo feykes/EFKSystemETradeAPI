@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EFKSystemETradeAPI.Application.Repositories
 {
-    public interface ICategoryWriteRepository : IRepository<Category>
+    public interface ICategoryWriteRepository : IWriteRepository<Category>
     {
     }
 }

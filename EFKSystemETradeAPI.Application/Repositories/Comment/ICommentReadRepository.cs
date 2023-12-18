@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EFKSystemETradeAPI.Application.Repositories
 {
-    public interface ICommentReadRepository : IRepository<Comment>
+    public interface ICommentReadRepository : IReadRepository<Comment>
     {
     }
 }

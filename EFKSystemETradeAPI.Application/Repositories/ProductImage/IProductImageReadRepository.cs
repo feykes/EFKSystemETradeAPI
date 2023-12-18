@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EFKSystemETradeAPI.Application.Repositories
 {
-    public interface IProductImageReadRepository : IRepository<ProductImage>
+    public interface IProductImageReadRepository : IReadRepository<ProductImage>
     {
     }
 }

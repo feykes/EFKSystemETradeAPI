@@ -19,7 +19,6 @@ namespace EFKSystemETradeAPI.Domain.Entities
         public string PaymentMethod { get; set; }
         public long ShippingPrice { get; set; }
         public long TotalPrice { get; set; }
-        public Address DeliveryAddress { get; set; }
-        public Address InvoiceAddress { get; set; }
+        public ICollection<OrderAddress> OrderAddresses { get; set; }
     }
 }

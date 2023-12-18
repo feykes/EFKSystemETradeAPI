@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EFKSystemETradeAPI.Application.Repositories
 {
-    public interface IColorReadRepository : IRepository<Color>
+    public interface IColorReadRepository : IReadRepository<Color>
     {
     }
 }

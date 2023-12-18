@@ -9,7 +9,7 @@ namespace EFKSystemETradeAPI.Domain.Entities
 {
     public class Province : BaseEntity
     {
-        public string ProvinceName { get; set; }
+        public string Name { get; set; }
         public ICollection<District> Districts { get; set; }
     }
 }

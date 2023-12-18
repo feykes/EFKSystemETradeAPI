@@ -15,7 +15,7 @@ namespace EFKSystemETradeAPI.Persistence.Configuration
             get
             {
                 ConfigurationManager configurationManager = new();
-                configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../Presentation/EFKSystemETradeAPI.Presentation"));
+                configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../EFKSystemETradeAPI.Presentation"));
                 configurationManager.AddJsonFile("appsettings.json");
 
                 return configurationManager.GetConnectionString("MsSQL");
